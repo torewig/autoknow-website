@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_old_2026-06/
+
+Sitemap: https://REPLACE-WITH-DOMAIN/sitemap.xml
