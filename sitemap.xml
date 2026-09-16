@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace REPLACE-WITH-DOMAIN with the final domain before deploying (see DEPLOY.md). -->
+<!-- Replace torewig.github.io/autoknow-website with the final domain before deploying (see DEPLOY.md). -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://REPLACE-WITH-DOMAIN/</loc><lastmod>2026-09-16</lastmod><priority>1.0</priority></url>
-  <url><loc>https://REPLACE-WITH-DOMAIN/papers.html</loc><lastmod>2026-09-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://REPLACE-WITH-DOMAIN/team.html</loc><lastmod>2026-09-06</lastmod><priority>0.8</priority></url>
-  <url><loc>https://REPLACE-WITH-DOMAIN/publications.html</loc><lastmod>2026-09-06</lastmod><priority>0.7</priority></url>
-  <url><loc>https://REPLACE-WITH-DOMAIN/news.html</loc><lastmod>2026-09-06</lastmod><priority>0.6</priority></url>
-  <url><loc>https://REPLACE-WITH-DOMAIN/media.html</loc><lastmod>2026-09-06</lastmod><priority>0.5</priority></url>
-  <url><loc>https://REPLACE-WITH-DOMAIN/links.html</loc><lastmod>2026-09-06</lastmod><priority>0.5</priority></url>
+  <url><loc>https://torewig.github.io/autoknow-website/</loc><lastmod>2026-09-16</lastmod><priority>1.0</priority></url>
+  <url><loc>https://torewig.github.io/autoknow-website/papers.html</loc><lastmod>2026-09-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://torewig.github.io/autoknow-website/team.html</loc><lastmod>2026-09-06</lastmod><priority>0.8</priority></url>
+  <url><loc>https://torewig.github.io/autoknow-website/publications.html</loc><lastmod>2026-09-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://torewig.github.io/autoknow-website/news.html</loc><lastmod>2026-09-06</lastmod><priority>0.6</priority></url>
+  <url><loc>https://torewig.github.io/autoknow-website/media.html</loc><lastmod>2026-09-06</lastmod><priority>0.5</priority></url>
+  <url><loc>https://torewig.github.io/autoknow-website/links.html</loc><lastmod>2026-09-06</lastmod><priority>0.5</priority></url>
 </urlset>
