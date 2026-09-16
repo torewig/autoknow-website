@@ -13,8 +13,8 @@ Static HTML site, no build step, no framework. Every page is self-contained and 
 | `news.html` | Timeline of milestones |
 | `media.html` | Outreach: press contact, media coverage, policy briefs, talks |
 | `links.html` | Resources: repositories, data sources, institutions |
-| `404.html` | Not-found page (uses absolute `/assets/...` paths; works once hosted at a domain root) |
-| `robots.txt`, `sitemap.xml` | Search-engine files. Replace `REPLACE-WITH-DOMAIN` before going live |
+| `404.html` | Not-found page. Uses `/autoknow-website/...` paths because GitHub serves it at any depth; change these to `/...` if the site moves to a custom domain |
+| `robots.txt`, `sitemap.xml` | Search-engine files. Point at `torewig.github.io/autoknow-website`; update if the domain changes |
 | `assets/style.css` | Design system: colours, typography, layout, components |
 | `assets/site.js` | Mobile navigation toggle and footer year |
 | `assets/uio-logo.png`, `assets/erc-eu-logo.png` | Official logos (from the ERC/EU lockup and UiO logo files in the P02 folder) |
@@ -44,22 +44,32 @@ All three free options handle a custom domain with automatic HTTPS. The site nee
 
 **Domain:** a `.no` domain (e.g. `autoknow.no`) costs roughly NOK 150–200 per year from a Norwegian registrar such as Domeneshop. A `.eu` or `.org` domain is similar. Alternatively use the free `username.github.io/autoknow` address with no domain purchase.
 
-## Deploying to GitHub Pages (step by step)
+## Live deployment (since 2026-09-16)
 
-1. Create a repository, e.g. `torewig/autoknow-website`.
-2. Copy the contents of this folder (excluding `_old_2026-06/`) into the repository root and push.
-3. In the repository, go to *Settings → Pages*, set *Source* to *Deploy from a branch*, branch `main`, folder `/ (root)`.
-4. The site appears at `https://torewig.github.io/autoknow-website/` within a few minutes.
-5. For a custom domain: add a file named `CNAME` containing the domain (e.g. `autoknow.no`), then at the registrar create a `CNAME` record pointing `www` to `torewig.github.io` and `A` records for the apex to GitHub's four Pages IPs (listed in GitHub's Pages documentation). Enable *Enforce HTTPS* once the certificate is issued.
-6. Replace `REPLACE-WITH-DOMAIN` in `robots.txt` and `sitemap.xml` with the final domain.
+- **URL:** https://torewig.github.io/autoknow-website/
+- **Repository:** https://github.com/torewig/autoknow-website (public; this folder is the working copy, `.gitignore` keeps the review files out)
+- **Hosting:** GitHub Pages, branch `main`, folder `/ (root)`, HTTPS enforced. Every push to `main` redeploys within a minute or two.
 
-## Pre-launch checklist
+To publish a change:
 
+```bash
+git add -A && git commit -m "Describe the change" && git push
+```
+
+### Moving to a custom domain later
+
+1. Buy the domain (e.g. `autoknow.no`).
+2. Add a file named `CNAME` to this folder containing only the domain, and push.
+3. At the registrar create a `CNAME` record pointing `www` to `torewig.github.io` and `A` records for the apex to GitHub's four Pages IPs (listed in GitHub's Pages documentation).
+4. Enable *Enforce HTTPS* in *Settings → Pages* once the certificate is issued.
+5. Change `torewig.github.io/autoknow-website` to the new domain in `robots.txt` and `sitemap.xml`, and `/autoknow-website/` to `/` in `404.html`.
+
+## Post-launch checklist
+
+- [x] Site live and all pages verified (2026-09-16)
 - [ ] Confirm all names, affiliations, and roles on `team.html`
-- [ ] Decide whether preliminary findings on `papers.html` (P01, P08) should be public
-- [ ] Replace `REPLACE-WITH-DOMAIN` in `robots.txt` and `sitemap.xml`
-- [ ] Remove or exclude `_old_2026-06/`
-- [ ] Add team photos if desired (`assets/team/`)
+- [ ] Decide whether preliminary findings on `papers.html` (P01, P08) should stay public
+- [ ] Add team photos if desired (`assets/people/`)
 - [ ] Register the site URL with the ERC / UiO project page
 
 ## Print version
