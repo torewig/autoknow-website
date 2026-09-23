@@ -57,9 +57,8 @@ strong,b{font-weight:600}
 .mast-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 24px}
 .mast-inner a{display:block;line-height:0}
 .mast-inner a:hover{text-decoration:none;opacity:.85}
-.mast-uio img{height:50px;width:auto}
 .mast-erc img{height:58px;width:auto}
-@media(max-width:560px){.mast-uio img{height:34px}.mast-erc img{height:40px}}
+@media(max-width:560px){.mast-erc img{height:40px}}
 
 .nav{
   position:sticky;top:0;z-index:50;

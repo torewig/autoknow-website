@@ -17,7 +17,7 @@ Static HTML site, no build step, no framework. Every page is self-contained and 
 | `robots.txt`, `sitemap.xml` | Search-engine files. Point at `torewig.github.io/autoknow-website`; update if the domain changes |
 | `assets/style.css` | Design system: colours, typography, layout, components |
 | `assets/site.js` | Mobile navigation toggle and footer year |
-| `assets/uio-logo.png`, `assets/erc-eu-logo.png` | Official logos (from the ERC/EU lockup and UiO logo files in the P02 folder) |
+| `assets/erc-eu-logo.png` | Official ERC/EU funding lockup (from the P02 folder). The UiO logo was removed 2026-09-23: it may not be used on external websites |
 | `assets/favicon.svg` | Site icon |
 | `_old_2026-06/` | Backup of the June 2026 version. Delete before deploying, or keep out of the deploy folder |
 
