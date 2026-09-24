@@ -46,7 +46,7 @@ All three free options handle a custom domain with automatic HTTPS. The site nee
 
 ## Live deployment (since 2026-09-16, custom domain since 2026-09-24)
 
-- **URL:** https://autoknow.no/ (custom domain since 2026-09-24; https://torewig.github.io/autoknow-website/ redirects there). Domain registered at Domeneshop; DNS: four A records and four AAAA records to GitHub Pages, `www` CNAME to `torewig.github.io`. `CNAME` file in this folder holds the domain.
+- **URL:** https://autoknow.no/ (custom domain since 2026-09-24; https://torewig.github.io/autoknow-website/ redirects there). Domain registrar: [fill in]; DNS nameservers `ns1/ns2.no1.groupdnsservice.com`; DNS: four A records and four AAAA records to GitHub Pages, `www` CNAME to `torewig.github.io`. `CNAME` file in this folder holds the domain.
 - **Repository:** https://github.com/torewig/autoknow-website (public; this folder is the working copy, `.gitignore` keeps the review files out)
 - **Hosting:** GitHub Pages, branch `main`, folder `/ (root)`, HTTPS enforced. Every push to `main` redeploys within a minute or two.
 
@@ -58,7 +58,7 @@ git add -A && git commit -m "Describe the change" && git push
 
 ### Custom domain (done 2026-09-24; kept for reference)
 
-1. Buy the domain (`autoknow.no`, Domeneshop, auto-renewal on).
+1. Buy the domain (`autoknow.no`; check that auto-renewal is on).
 2. Add a file named `CNAME` to this folder containing only the domain, and push.
 3. At the registrar create a `CNAME` record pointing `www` to `torewig.github.io` and `A` records for the apex to GitHub's four Pages IPs (listed in GitHub's Pages documentation).
 4. Enable *Enforce HTTPS* in *Settings → Pages* once the certificate is issued.
