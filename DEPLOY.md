@@ -13,8 +13,8 @@ Static HTML site, no build step, no framework. Every page is self-contained and 
 | `news.html` | Timeline of milestones |
 | `media.html` | Outreach: press contact, media coverage, policy briefs, talks |
 | `links.html` | Resources: repositories, data sources, institutions |
-| `404.html` | Not-found page. Uses `/autoknow-website/...` paths because GitHub serves it at any depth; change these to `/...` if the site moves to a custom domain |
-| `robots.txt`, `sitemap.xml` | Search-engine files. Point at `torewig.github.io/autoknow-website`; update if the domain changes |
+| `404.html` | Not-found page. Uses root-relative `/...` paths (custom domain since 2026-09-24) |
+| `robots.txt`, `sitemap.xml` | Search-engine files. Point at `autoknow.no`; update if the domain changes |
 | `assets/style.css` | Design system: colours, typography, layout, components |
 | `assets/site.js` | Mobile navigation toggle and footer year |
 | `assets/erc-eu-logo.png` | Official ERC/EU funding lockup (from the P02 folder). The UiO logo was removed 2026-09-23: it may not be used on external websites |
@@ -44,9 +44,9 @@ All three free options handle a custom domain with automatic HTTPS. The site nee
 
 **Domain:** a `.no` domain (e.g. `autoknow.no`) costs roughly NOK 150–200 per year from a Norwegian registrar such as Domeneshop. A `.eu` or `.org` domain is similar. Alternatively use the free `username.github.io/autoknow` address with no domain purchase.
 
-## Live deployment (since 2026-09-16)
+## Live deployment (since 2026-09-16, custom domain since 2026-09-24)
 
-- **URL:** https://torewig.github.io/autoknow-website/
+- **URL:** https://autoknow.no/ (custom domain since 2026-09-24; https://torewig.github.io/autoknow-website/ redirects there). Domain registered at Domeneshop; DNS: four A records and four AAAA records to GitHub Pages, `www` CNAME to `torewig.github.io`. `CNAME` file in this folder holds the domain.
 - **Repository:** https://github.com/torewig/autoknow-website (public; this folder is the working copy, `.gitignore` keeps the review files out)
 - **Hosting:** GitHub Pages, branch `main`, folder `/ (root)`, HTTPS enforced. Every push to `main` redeploys within a minute or two.
 
@@ -56,9 +56,9 @@ To publish a change:
 git add -A && git commit -m "Describe the change" && git push
 ```
 
-### Moving to a custom domain later
+### Custom domain (done 2026-09-24; kept for reference)
 
-1. Buy the domain (e.g. `autoknow.no`).
+1. Buy the domain (`autoknow.no`, Domeneshop, auto-renewal on).
 2. Add a file named `CNAME` to this folder containing only the domain, and push.
 3. At the registrar create a `CNAME` record pointing `www` to `torewig.github.io` and `A` records for the apex to GitHub's four Pages IPs (listed in GitHub's Pages documentation).
 4. Enable *Enforce HTTPS* in *Settings → Pages* once the certificate is issued.
@@ -70,7 +70,8 @@ git add -A && git commit -m "Describe the change" && git push
 - [ ] Confirm all names, affiliations, and roles on `team.html`
 - [ ] Decide whether preliminary findings on `papers.html` (P01, P08) should stay public
 - [ ] Add team photos if desired (`assets/people/`)
-- [ ] Register the site URL with the ERC / UiO project page
+- [ ] Enable "Enforce HTTPS" in Settings → Pages once the certificate is issued
+- [ ] Register the site URL (https://autoknow.no) with the ERC / UiO project page
 
 ## Print version
 

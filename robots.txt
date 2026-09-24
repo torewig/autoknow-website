@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /_old_2026-06/
 
-Sitemap: https://torewig.github.io/autoknow-website/sitemap.xml
+Sitemap: https://autoknow.no/sitemap.xml
