@@ -70,7 +70,7 @@ git add -A && git commit -m "Describe the change" && git push
 - [ ] Confirm all names, affiliations, and roles on `team.html`
 - [ ] Decide whether preliminary findings on `papers.html` (P01, P08) should stay public
 - [ ] Add team photos if desired (`assets/people/`)
-- [ ] Enable "Enforce HTTPS" in Settings → Pages once the certificate is issued
+- [x] Enable "Enforce HTTPS" in Settings → Pages (done 2026-09-24)
 - [ ] Register the site URL (https://autoknow.no) with the ERC / UiO project page
 
 ## Print version
